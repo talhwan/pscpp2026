@@ -9,6 +9,11 @@ struct Student {
     int id;
     double score;
 };
+struct Product {
+    string name;
+    int price;
+    string manufac;
+};
 
 // 구조체 포인터를 매개변수로 받는 함수
 void updateScore(Student* s) {
@@ -16,7 +21,9 @@ void updateScore(Student* s) {
 }
 
 int main(){
-
+    Product product;
+    product.price = 1;
+    Product* product1 = &product;
     /*
     int int_a = 1;
     int* int_p_a = &int_a;
