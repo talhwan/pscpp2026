@@ -102,16 +102,6 @@ void MyCircularQueue::print()
     int f = front;
     int r = rear;
 
-// 0 1 2 3 4 5 6 7 8 9
-// - - - - - - - - (0)(1)  
-    for(int i=0;i<size();i++){
-        int temp_order = f + i; // 8 9 10 11
-        if(temp_order > size() -1){
-            temp_order = temp_order - size();
-        }
-        cout << (i + 1) << "번 : " << list[temp_order] << endl;
-    }
-
     while (f != r)
     {
         f++;
